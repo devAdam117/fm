@@ -49,8 +49,17 @@ where v_i = (adjClose_i, adjClose_{i+1},adjClose_{i+2}). For the final step we c
  
 -Input:  `rebalance(c("AMZN","PFE","DELL","NSRGY","NVDA","MDC","MSFT","VWAGY","EBAY","RDS-B","KO","BA","WMT","DAL","PEP","IBM","F","MMM","SBUX","TM","ADBE","AMD","TSM","TSLA","MA","V","COIN","BOLT","PYPL","LI"),c(1,69,60,25,11,65,10,101,45,74,58,15,22,75,20,27,166,18,29,18,5,22,27,3,9,15,9,287,14,91),43.70,6)`
 
-- Output: 
-- 
+- Output:`
+[1] "SELL PFE , amount:  1"
+[1] "SELL TSLA , amount:  1"
+[1] "SELL MA , amount:  1"
+[1] "Not enough funds to buy 1 for AMZN"
+[1] "BUY NSRGY , amount: 1"
+[1] "BUY DAL , amount: 32"
+[1] "Not enough funds to buy 1 for TSM"
+[1] "END of rebalancing"
+`
+
 
 
 
