@@ -4,7 +4,7 @@
 - model indicates to sell when you cross critical up boundry
 - modell indicates to buy when you cross critical down boundry
 
-## Prerquisites
+## Prerequisites
 - in R console type  install.packages("quantmod") and hit enter
 - in R console type library(quantmod) and hit enter
 
