@@ -8,6 +8,10 @@
 - in R console type  install.packages("quantmod") and hit enter
 - in R console type library(quantmod) and hit enter
 
+## Function explained
+- in R type rebalance(stocks,amountOfStocks,wallet,monthsToLearn)
+- ### stocks: typeOf vector 
+
 ## How the process works after running script?
 |Initiation|Convertion|Setting Critical Boundries|Checking Todays Crossover|Checking Trend|
 |-------------|-------------|-------------|-------------|-------------|
