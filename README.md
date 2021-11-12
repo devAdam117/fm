@@ -17,5 +17,6 @@
 (a) We have n adjClose data of stock naming them adjClose_1, adjClose_2, ..., ajClose_n. From this we will make highly correlated 3 dimensional vectors v_1,v_2,...,v_n-2
 where v_i = (adjClose_i, adjClose_{i+1},adjClose_{i+2}) $x=2$
 <img src="https://render.githubusercontent.com/render/math?math=e^{i +\pi} =x+1">
+![formula](https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1)
 
 
