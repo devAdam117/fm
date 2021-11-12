@@ -14,5 +14,5 @@
 |Get the latest adjPrice of stock/s for past n-months you have entered as argument in function|From adjData we make highly correlated 3 dimensionals vectors from which we make mean values devided by the first element of the same vector (a)|For highly correlated vector are created critical boundries which will indicates, whether sell or buy |Now we are checking whether the newest vector is over/below up/down critical line if so we pick vector right before this one and we will check if he is over/below up/down critical line also|
 |![1](https://user-images.githubusercontent.com/78803735/141456206-7501a8a1-7201-46f3-8311-63192b488e4f.jpg)|![2](https://user-images.githubusercontent.com/78803735/141457030-5ca2a221-9c9e-4431-8fd5-6b8c004e8e73.jpg)
 |![3](https://user-images.githubusercontent.com/78803735/141457870-5982b5f5-edea-44b4-941a-ce8de1c964d1.jpg)
-|a|b|
+
 
