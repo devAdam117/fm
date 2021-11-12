@@ -1,8 +1,9 @@
 # Rebalancing model
 - is usuful for stocks which has low risk or standard deviation
-- model will make critical boundaries for each stock made by historical data 
+- model will make critical boundaries for each stock made by historical data -
 - model indicates to sell when you cross critical up boundry
 - modell indicates to buy when you cross critical down boundry
+- model calculates with your wallet, if you don't have money to buy it won't recommend you to buy
 
 ## Prerequisites
 - in R console type  install.packages("quantmod") and hit enter
@@ -11,7 +12,23 @@
 ## Function explained
 - in R type rebalance(stocks,amountOfStocks,wallet,monthsToLearn)
 - ### stocks
-  - typeOf vector 
+  - typeOf: vector of strings 
+  - write all stocks symbols you want to rebalance 
+  - example: c("AAPL","AMC","TSLA") or for single one: "AAPL"
+- ### amountOfStocks 
+  - typeOf: vector of integres
+  - write all numbers of already purchased stocks  for stocks symbols
+  - example: c(10,5,10) (meaning you have 10 stocks of "AAPL", 5 of "AMC", 10 of "TSLA") or for single one: 10
+- ### wallet
+  - typeOf: number 
+  - write total amount of money that is ready to invest
+  - example: 500
+ - ### monthsToLearn
+  - typeOf: integer
+  - write number of historical month of stocks for which should model learn, make critical lines and all other stuff till the end of evaluation. (Different monthsToLearn can lead to different result of recommendation)
+  - example: 6
+  
+  
 
 ## How the process works after running script?
 |Initiation|Convertion|Setting Critical Boundries|Checking Todays Crossover|Checking Trend|
