@@ -23,7 +23,7 @@
   - example: c(10,5,10) (meaning you have 10 stocks of "AAPL", 5 of "AMC", 10 of "TSLA") or for single one: 10 (meaning you have 10 stocks of "AAPL")
 - ### wallet
   - typeOf: number 
-  - write total amount of money that is ready to invest
+  - write total amount of money that is ready to invest (model will take them in to account if he tends to buy some stocks)
   - example: 500
  - ### monthsToLearn
   - typeOf: integer
