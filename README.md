@@ -45,6 +45,13 @@ where v_i = (adjClose_i, adjClose_{i+1},adjClose_{i+2}). For the final step we c
 - If the newest x_n crossover over top line we check if x_{n-1} is bellow top line if so, we can continue in our proccess else the execution ends here. Reason is that the previous point is also above top line so we asume our script already sold some amount of stocks "yesterday" or the day when x_{n-1} was the newest value.
 - If the newest x_n crossover bellow bottom line we check if x_{n-1} is above bottom line if so, we can continue in our proccess else the execution ends here. Reason is that the previous point is also bellow bottom line so we asume our script already bought som amount of stocks "yesterday" or the day when x_{n-1} was the newest value.
 
+## Example 
+ 
+- `rebalance(c("AMZN","PFE","DELL","NSRGY","NVDA","MDC","MSFT","VWAGY","EBAY","RDS-B","KO","BA","WMT","DAL","PEP","IBM","F","MMM","SBUX","TM","ADBE","AMD","TSM","TSLA","MA","V","COIN","BOLT","PYPL","LI"),c(1,69,60,25,11,65,10,101,45,74,58,15,22,75,20,27,166,18,29,18,5,22,27,3,9,15,9,287,14,91),43.70,6)`
+
+- Output: 
+- 
+
 
 
 
