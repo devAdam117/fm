@@ -18,7 +18,8 @@
   - example: c("AAPL","AMC","TSLA") or for single one: "AAPL"
 - ### amountOfStocks 
   - typeOf: vector of integres
-  - write all numbers of already purchased stocks  for stocks symbols
+  - are paired with stocks (first parameter of function)
+  - write all numbers of already owned stocks for each  stock from first argument
   - example: c(10,5,10) (meaning you have 10 stocks of "AAPL", 5 of "AMC", 10 of "TSLA") or for single one: 10
 - ### wallet
   - typeOf: number 
