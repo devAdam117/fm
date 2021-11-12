@@ -20,7 +20,7 @@
   - typeOf: vector of integres
   - are paired with stocks (first parameter of function)
   - write all numbers of already owned stocks for each  stock from first argument
-  - example: c(10,5,10) (meaning you have 10 stocks of "AAPL", 5 of "AMC", 10 of "TSLA") or for single one: 10
+  - example: c(10,5,10) (meaning you have 10 stocks of "AAPL", 5 of "AMC", 10 of "TSLA") or for single one: 10 (meaning you have 10 stocks of "AAPL")
 - ### wallet
   - typeOf: number 
   - write total amount of money that is ready to invest
