@@ -18,6 +18,7 @@
 where v_i = (adjClose_i, adjClose_{i+1},adjClose_{i+2}) $x=2$
 ```diff
 + text in green
+```diff
 <img src="https://render.githubusercontent.com/render/math?math=e^{i +\pi} =x+1">
 
 
