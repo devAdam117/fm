@@ -1,16 +1,15 @@
 
-# natalia -> rebalance(c("BOLT","RDS-B","F","LI","DAL","WMT","CVX","KO","VWAGY","NSRGY"),c(1000,225,511,326,229,67,87,175,302,70),55.37,3)
-# ja -> rebalance(c("AMZN","PFE","DELL","NSRGY","NVDA","MDC","MSFT","VWAGY","EBAY","RDS-B","KO","BA","WMT","DAL","PEP","IBM","F","MMM","SBUX","TM","ADBE","AMD","TSM","TSLA","MA","V","COIN","BOLT","PYPL","LI"),c(1,69,60,25,11,65,10,101,45,74,58,15,22,75,20,27,166,18,29,18,5,22,27,3,9,15,9,287,14,91),43.70,6)
+#Example_1 
+# library(quantmod)
+# rebalance(c("BOLT","RDS-B","F","LI","DAL","WMT","CVX","KO","VWAGY","NSRGY"),c(1000,225,511,326,229,67,87,175,302,70),55.37,3,20,0.0025)
+#Example_1
+
+#Example_2
+# library(quantmod)
+# rebalance(c("AMZN","PFE","DELL","NSRGY","NVDA","MDC","MSFT","VWAGY","EBAY","RDS-B","KO","BA","WMT","DAL","PEP","IBM","F","MMM","SBUX","TM","ADBE","AMD","TSM","TSLA","MA","V","COIN","BOLT","PYPL","LI"),c(1,69,60,25,11,65,10,101,45,74,58,15,22,75,20,27,166,18,29,18,5,22,27,3,9,15,9,287,14,91),43.70,3,10,0.0025)
+#Example_2
 
 
-#1)  napis  do konzoly iba a daj enter - "install.packages("quantmod")"
-#2) napis do konzoly a daj enter  - "library(quantmod)"
-#3) potom naitaj tento skript, a nasledne zavolaj funkciu rebalance(), hore mas prikaz ktory mozes aktualne pouzit
-#4) parametre funkcie 1. nazvy skratiek firiem s ktorymi chces pracovat, 2. argument, kolko mas kupenych akcii akej firmy, 3. argument kolko mas nezainvestovanych penazi?
-# pripravenych na investiciu, 4. argument ake casove obdobie v mesiacoch beries v uvahu pre kazdu z firiem? Priklad spustenia rebalance( c("AMZN","PFE"),(10,35),1000,6)
-#5) s tym ze po kazdom spusteni rebalancu poprehadzuj na stock trader tak ako ti vypise konzola a potom, pri dalsom spusteni prepis parametre pri volani funkcie
-# teda ak ti konzola povedala ze predaj jednu akciu "AMZN" dalsie volanie rebalance bude vyzerat takto:  rebalance( c("AMZN","PFE"),(9,35),nova suma, ktoru ti ukazuje stack trader,6)
-#Predvame za low a kupuje za high + su zaratane aj fees
 
 
 #vyuzitie pseudoRebalance funkcie sluzi iba na nasadenie najviac optimalnych hranic pri ktorych predavat
