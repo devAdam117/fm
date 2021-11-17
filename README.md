@@ -1,17 +1,17 @@
 # Rebalancing model
 - is usuful for stocks which has low risk or standard deviation
 - is usually applied on daily basis
-- model will make critical boundaries for each stock made by historical data 
+- model will make critical boundaries for each stock made by historical data so it can maximize its profit
 - model indicates to sell when you cross critical up boundry
 - modell indicates to buy when you cross critical down boundry
-- model calculates with your wallet, if you don't have money to buy it won't recommend you to buy
+- model calculates with your wallet budget, with fees for transaction and also with selling/buying price difference
 
 ## Prerequisites
 - in R console type  install.packages("quantmod") and hit enter
 - in R console type library(quantmod) and hit enter
 
 ## Function explained
-- in R type rebalance(stocks,amountOfStocks,wallet,monthsToLearn)
+- in R type rebalance(stocks,amountOfStocks,wallet,monthsToCalculate)
 - ### stocks
   - typeOf: vector of strings 
   - write all stocks symbols you want to rebalance 
@@ -25,10 +25,16 @@
   - typeOf: number 
   - write total amount of money that is ready to invest (model will take them in to account if he tends to buy some stocks)
   - example: 500
- - ### monthsToLearn
+ - ### monthsToCalculate
   - typeOf: integer
-  - write number of historical month of stocks for which should model learn, make critical lines and all other stuff till the end of evaluation. (Different monthsToLearn can lead to different result of recommendation)
+  - write the number for how many months to past we will collect data of stock value (Different monthsToCalculate can lead to different result of recommendation)
   - example: 6
+- ### aoLearningDays
+  - typeOf: integer
+  - write number of days for which should model learn and apply best possible solution when it comes to optimizing profit.
+  - model will separate last 20 days from 6 month where on these 20 days will be tested what your profit is and choose the best possible way
+  - example: 20
+  
   
   
 
