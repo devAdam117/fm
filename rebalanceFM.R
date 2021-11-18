@@ -279,7 +279,7 @@ rebalance <- function(names,aoStocks,budget,monthsToCalculate,deepthOfLearningIn
   }
   #Cely princip sa opakuje pre kupu, s tym rozdielom ze v kupe sledujeme ci mame dostatok penazi ak nie, tak vypise do konzoly, ze nemame dostatok fundov na kupu
   for(index in 1:length(names)){
-    num <- 1
+    num <- 1  #pre ucely ak nebduem schopny kupit pozaovane mnozstvo, kupim najblizsie mozne 
     data <- getSymbols(names[index], from = seq(as.Date(Sys.Date()), length = 2, by = paste(paste("-",monthsToCalculate , sep=""),"months", sep=" "))[2], 
                            to = Sys.Date(), warnings = FALSE, auto.assign = FALSE)
     adjClose <- data[,4]
